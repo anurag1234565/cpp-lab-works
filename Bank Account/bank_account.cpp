@@ -125,9 +125,11 @@ int prompt() //ask user their account number
   if( (acn <= acno) && (acn > 0))
     return acn;
   else
+  {
     cout << "Invalid Account Number" << endl;
     cin.ignore().get();
     return prompt();
+  }
 }
 
 void eventHandler(int o) //handles events from main menu
